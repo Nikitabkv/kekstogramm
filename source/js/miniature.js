@@ -11,7 +11,7 @@ const miniatureTemplate = ({url, comments, likes}) => {
   let miniPicture = miniPictureTemplate.cloneNode(true)
 
   // Подстраиваем данные
-  miniPicture.querySelector('.picture__img').src = url
+  miniPicture.querySelector('.picture__img').src = `build/${url}`
   miniPicture.querySelector('.picture__likes').textContent = likes
   miniPicture.querySelector('.picture__comments').textContent = comments.length
 

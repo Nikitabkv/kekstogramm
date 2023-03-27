@@ -29,7 +29,7 @@ const getImgPreview = () => {
 
       reader.readAsDataURL(file)
     } else {
-      filePreview.src = './img/upload_image_error.jpg'
+      filePreview.src = './build/img/upload_image_error.jpg'
     }
 
   })

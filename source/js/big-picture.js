@@ -11,7 +11,7 @@ const bigPictureTemplate = (object) => {
 
   // Ищем src подставляем url
   const bigPictureUrl = bigPicture.querySelector('.big-picture__img').querySelector('img')
-  bigPictureUrl.src = object.url
+  bigPictureUrl.src = `build/${object.url}`
 
   // Ищем кол-во лайков и подставляем
   const bigPictureLikes = bigPicture.querySelector('.likes-count')
@@ -37,7 +37,7 @@ const commentTemplate = (object) => {
   // Создаем картинку в комментарии
   const commentAvatarContainer = document.createElement('img')
   commentAvatarContainer.classList.add('social__picture')
-  commentAvatarContainer.src = object.avatar
+  commentAvatarContainer.src = `build/${object.avatar}`
   commentAvatarContainer.alt = object.name
   commentAvatarContainer.width = 35
   commentAvatarContainer.height = 35
